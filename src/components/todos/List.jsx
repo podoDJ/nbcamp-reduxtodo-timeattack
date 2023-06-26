@@ -6,7 +6,6 @@ const List = () => {
   const todos = useSelector((state) => {
     return state.todos;
   });
-
   const dispatch = useDispatch();
 
   return (

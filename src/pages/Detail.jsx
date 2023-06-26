@@ -1,6 +1,8 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { useNavigate, useParams } from "react-router-dom";
+import ReviewsList from "../components/reviews/ReviewsList";
+import ReviewsForm from "../components/reviews/ReviewsForm";
 
 const Detail = () => {
   const { id } = useParams();
@@ -20,6 +22,8 @@ const Detail = () => {
       {todo.isDone.toString()}
       <br />
       <button onClick={() => navigate("/")}>이전 화면으로</button>
+      <ReviewsForm/>
+      <ReviewsList/>
     </div>
   );
 };
